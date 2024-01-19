@@ -9,15 +9,12 @@ body {
     font-family: Arial, sans-serif; /* Puedes ajustar la fuente según tus preferencias */
     color: #ffffff; /* Establece el color de texto (puedes ajustarlo según tu diseño) */
 }
-
 @media only screen and (max-width: 1440px) {
     body {
         background-attachment: fixed; /* Fija la imagen de fondo para evitar desplazamiento en dispositivos móviles */
     }
 }
-
 .presentacion {
-    width: 50%;
     margin: 20px auto;
     background-color: rgb(89, 176, 176, 0.08);
     backdrop-filter: blur(4px);
@@ -25,37 +22,46 @@ body {
     background-size: 75vh;
     border-radius: 20px;
 }
-
 .tituloPresentacion {
     display: flex;
     justify-content: center;
 }
-
 .presentacionCuerpo {
-    width: 50%;
     background-color: rgb(255, 255, 255, 0.3);
     backdrop-filter: blur(2px);
     padding: 20px;
     border-radius: 10px 10px 10px 0px;
     overflow: hidden;
+    text-align: center;
 }
 .cuerpoPresentacion {
-    display: flex;
-    justify-content: center;
+    margin: auto;
 }
 .foto {
     display: flex;
     justify-content: center;
 }
-
+.contVolver {
+    display: flex;
+    justify-content: center;
+}
+.volver {
+    width: 30%;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background: black;
+    padding: 10px;
+    border-radius: 20px 0px 20px 20px;
+    margin-bottom: 5px;
+}
 .fotoPerfil {
     margin-top: 15px;
     width: 15%;
 }
-
 .tarjeta {
     width: 50%;
-    margin: 10px auto;
+    margin: 100px auto;
     background-color: rgb(89, 176, 176, 0.2);
     backdrop-filter: blur(4px);
     background-size: 75vh;
@@ -71,21 +77,267 @@ body {
     display: flex;
     justify-content: center;
 }
-.row.datos {
-    text-align: center;/* Centra el texto dentro de la div */
-    overflow: hidden;
+.cuerpo2 {
+    display: flex;
+    justify-content: center;
 }
-.row.datos p {
-    display: block; /* Coloca cada párrafo en una línea nueva */
-    margin: 10px 0; /* Añade un espacio vertical entre los párrafos */
-}
-
-.btnCopiar {
+.btnCopia {
     text-align: center; /* Centra el contenido del contenedor */
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
 }
 .btnCopiar {
-    text-align: center; /* Centra el contenido del contenedor */
+    padding: 10px;
+    border-radius: 20px 0px;
+    background: black;
+    color: white;
+    transition: all 1s;
+}
+.btnCopiar:hover {
+    transform: scale(1.1);
+    background: black;
+}
+.contMsnOculto {
+    margin-top: 10px;
+}
+.mensajeOculto {
+    margin-top: 10px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.mensajeOculto2 {
+    margin-top: 10px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.mostrarMensaje {
+    opacity: 1;
+}
+.mostrarMensaje2 {
+    opacity: 1;
+}
+/* index */
+.contTitulo {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 50%;
+    padding: 20px;
+    background-color: rgb(89, 176, 176, 0.3);
+    backdrop-filter: blur(4px);
+    background-position: center;
+    background-size: 75vh;
+    border-radius: 20px;
+}
+.opciones {
+    display: flex;
+    justify-content: center;
+}
+.op1 {
+    width: 80%;
+    margin: 100px auto;
+    background-color: rgb(89, 176, 176, 0.08);
+    backdrop-filter: blur(4px);
+    background-position: center;
+    background-size: 75vh;
+    border-radius: 20px;
+}
+.tituloOp1 {
+    display: flex;
+    justify-content: center;
+}
+.contOp1 {
+    padding: 10px;
+}
+.btninfo {
+    display: flex;
+    justify-content: center;
+}
+
+.btninfo a {
+    text-align: center;
+    text-decoration: none;
+    border: solid white;
+    color: white;
+    background: black;
+    padding: 10px;
+    border-radius: 20px 0px;
+    margin-bottom: 10px;
+    transition: all 1s ease;
+}
+.btninfo a:hover {
+    transform: scale(1.1);
+}
+.contOps {
+    margin-top: -60px;
+}
+/* comentario */
+/* btn enviar */
+.btnEnviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnenviar {
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 20px;
+    border-radius: 30px 0;
+    border: solid white 1px;
+    transition: all 1.5s;
+}
+.btnenviar:hover {
+    transform: scale(1.1);
+}
+.contLinea {
+}
+.linea {
+    color: white;
+    border: solid white;
+}
+.contNo {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.contNo input {
+    border-radius: 20px 0px;
+    height: 55px;
+}
+.contComentario {
+    display: flex;
+    justify-content: center;
+}
+/* .comentario {
+    margin-left: 10px;
+} */
+.contCaja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.cajaComentario {
+    border-radius: 15px;
+    height: 100px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 30px 0px;
+}
+
+.cajaComentario:focus {
+    border-radius: 15px;
+    height: 100px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 30px 0px;
+}
+.nombre {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 30px 30px;
+    margin-bottom: 10px;
+}
+.nombre:focus {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 30px 30px;
+    margin-bottom: 10px;
+}
+.comentario {
+    display: flex;
+    background-color: rgba(77, 83, 83, 0.08);
+    backdrop-filter: blur(4px);
+    padding: 20px;
+    border: solid white 0.5px;
+    border-radius: 0px 30px 30px;
+
+    text-align: center;
+    justify-content: center;
+}
+
+.tituloComentario {
+    backdrop-filter: blur(4px);
+    padding: 10px;
+    text-align: center;
+    border: solid white 0.1px;
+    border-radius: 30px 0px;
+    margin-bottom: 15px;
+}
+.titutloComentario {
+    backdrop-filter: blur(4px);
+    padding: 10px;
+    text-align: center;
+    border: solid white 0.5px;
+    margin-bottom: 10px;
+    border-radius: 0px 10px;
+    font-size: 20px;
+}
+.titulo2Comentario {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.contenedorDatos {
+    display: flex;
+    justify-content: center;
+}
+.nombreUsuario {
+    padding: 15px;
+    border-radius: 30px 0px;
+    width: 50%;
+    margin-bottom: 15px;
+   
+    backdrop-filter: blur(4px);
+    background-color: rgba(184, 196, 196, 0.5);
+}
+.nomusuario{
+    margin-left: 20px;
+}
+.comentarioUsuario {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(184, 196, 196, 0.5);
+    border-radius: 40px;
+     
+}
+.linea1 {
+    margin-top: 15px;
+    border: 0;
+    border-top: 5px solid white;
+    opacity: 1;
+}
+.textoComentario {
+    text-align: center;
+}
+.cuadroMensaje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 0px;
+    background-color: rgba(184, 196, 196, 0.5);    backdrop-filter: blur(4px);
+    padding:30px;
+    /* margin-top: 300px; */
+}
+.mensaje{
+    background-color: rgb(223, 216, 229);
+    padding: 50px;
+    border-radius: 30px 0px;
+    font-size: 20px;
+    overflow: hidden;
+    
+}
+.container{
+    margin:150px auto ;
 }

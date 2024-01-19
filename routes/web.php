@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ComentarioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+// Route::get('/', function () {
+//     return view('general.index');
+// }) ->name('index');
+
+Route::get('mensaje', function () {
+    return view('comentarioListo');
+})->name('msn');
+
+Route::get('bancario', function () {
     return view('welcome');
-});
+})->name('bancario');
+
+Route::get('fiscalizacion', function () {
+    return view('fiscalizacion');
+})->name('fiscalizacion');
+
+// Route::resource('Comentario',ComentarioController::class);
+
+Route::post('/comentario.store' , [ComentarioController::class, 'store'])->name('comentario.store');
+Route::get('/' , [ComentarioController::class, 'index'])->name('index');

@@ -1,0 +1,16 @@
+{
+  "public/images/fondo.webp": {
+    "file": "assets/fondo-c2d5f742.webp",
+    "src": "public/images/fondo.webp"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-b9de8752.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-cfaa49ae.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
